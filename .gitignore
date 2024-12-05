@@ -1,0 +1,48 @@
+# IDE and OS generated files
+/.idea/
+/.vscode/
+/*.iml
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# Build directories and files
+/target/
+/build/
+*.log
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven and Gradle files
+/.mvn/
+/.settings/
+/.idea/
+/.gradle/
+/*.log
+
+# Docker
+docker-compose.override.yml
+docker-compose.yml
+
+# Environment variables
+.env
+
+# PostgreSQL data directory
+pgdata/
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+/.project
+/.classpath
+/.settings/
+
+# Logs
+*.log
+
+# Local configuration files
+local.properties

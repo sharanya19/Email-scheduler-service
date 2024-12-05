@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/email_sender
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: email-sender-group
+    producer:
+      bootstrap-servers: localhost:9092

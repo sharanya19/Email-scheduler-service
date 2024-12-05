@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://postgres:5432/email_scheduler
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  kafka:
+    bootstrap-servers: kafka:9092
+    topic: email-delivery
+
+logging:
+  level:
+    root: INFO
+    org.springframework.kafka: DEBUG
+
+# Scheduler Configuration (Runs every 60 seconds)
+scheduler:
+  fixed-rate: 60000
